@@ -1,0 +1,6 @@
+%h1 Photos#index
+<p>Find me in app/views/photos/index.html.haml</p>
+
+%ul
+  - @photos.each do |photo|
+    %li= link_to(photo.filename, event_photo_url(@event, photo))
