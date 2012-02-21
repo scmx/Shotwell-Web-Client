@@ -11,7 +11,7 @@ class PhotosController < ApplicationController
 
   def image
     @photo = Photo.find(params[:id])
-    send_file @photo.filename, :disposition => :inline # FIXME: properly set content-type (:type => MIME::Types.type_for(@photo.filename) or smth. like this)
+    send_file @photo.filename, :disposition => 'inline' # FIXME: properly set content-type (:type => MIME::Types.type_for(@photo.filename) or smth. like this)
   end
 
 end
