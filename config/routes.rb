@@ -1,7 +1,11 @@
 ShotwellWebClient::Application.routes.draw do
 
   resources :events do
-    resources :photos
+    resources :photos do
+      member do
+        get 'image'
+      end
+    end
   end
 
   # The priority is based upon order of creation:
