@@ -4,4 +4,8 @@ class Photo < ActiveRecord::Base
 
   belongs_to :event
 
+  def thumb_path
+    Pathname.new('thumbs/' + self.id.to_s + '.jpg')
+  end
+
 end

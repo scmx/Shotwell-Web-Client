@@ -4,6 +4,7 @@ ShotwellWebClient::Application.routes.draw do
     resources :photos do
       member do
         get 'image'
+        get 'thumb'
       end
     end
   end
