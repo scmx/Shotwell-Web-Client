@@ -8,4 +8,8 @@ class Photo < ActiveRecord::Base
     Pathname.new('thumbs/' + self.id.to_s + '.jpg')
   end
 
+  def title
+    self[:title] || File.basename(self[:filename])
+  end
+
 end
