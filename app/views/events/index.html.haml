@@ -1,6 +1,9 @@
-%h1 Events#index
-<p>Find me in app/views/events/index.html.erb</p>
+%h1 Events
 
 %ul
-  - @events.each do |event|
-    %li= link_to(event.name, event_photos_path(event))
+  - @events_by_year.each do |year, events|
+    %li
+      = year
+      %ul
+        - events.each do |event|
+          %li= link_to(event.title, event_photos_path(event))

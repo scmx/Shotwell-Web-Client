@@ -1,7 +1,7 @@
 class EventsController < ApplicationController
 
   def index
-    @events = Event.all
+    @events_by_year = Event.order('time_created DESC').all.group_by {|event| event.created_at.year }
   end
 
   def show
