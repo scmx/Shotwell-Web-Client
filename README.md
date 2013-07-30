@@ -4,7 +4,7 @@ forked from [fkoulba/Shotwell-Web-Client](http://github.com/fkoulba/Shotwell-Web
 
     [x] Upgrade to rails 4
     [ ] Add angular.js
-    [ ] Replace haml with slim
+    [x] Replace haml with slim
     [ ] Add users
     [ ] Add devise
     [ ] Add cancan

@@ -21,8 +21,8 @@ gem 'therubyracer', platforms: :ruby
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# Use slim for templates
+gem 'slim-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -43,7 +43,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
-gem 'haml-rails'
 
 gem 'mini_magick'
