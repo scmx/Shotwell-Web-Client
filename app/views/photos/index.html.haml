@@ -1,0 +1,8 @@
+%h1 Photos#index
+<p>Find me in app/views/photos/index.html.haml</p>
+
+%ul.thumbs_list
+  - @photos.each do |photo|
+    %li.thumb
+      = link_to(image_tag(thumb_event_photo_path(@event, photo)), event_photo_path(@event, photo))
+      = link_to(photo.title, event_photo_path(@event, photo))
