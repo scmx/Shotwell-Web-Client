@@ -1,9 +1,0 @@
-%h1 Events
-
-%ul
-  - @events_by_year.each do |year, events|
-    %li
-      = year
-      %ul
-        - events.each do |event|
-          %li= link_to(event.title, event_photos_path(event))
